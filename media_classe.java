@@ -1,5 +1,5 @@
 public class Media{
-	private double n1,trab,n2,mfinal;
+	private double n1,trab,n2,mfinal,progresso;
 	
 	public double getN1 (){
 		return n1;
@@ -13,6 +13,9 @@ public class Media{
 	public double getTrab (){
 		return trab;
 	}
+	public double getProgresso(){
+		return progresso;
+	}
 	
 	public void setN1(double n1){
 		this.n1 = n1;
@@ -23,5 +26,18 @@ public class Media{
 	public void setTrab(double trab){
 		this.trab = trab;
 	}
+	public void setProgresso(double progresso){
+		this.progresso = progresso;
+	}
 	
+	public void setCalculaN1(){
+		this.n1 = ((n1+progresso)/2)*0.4;
+	}
+	public void setCalculaN2(){
+		this.n2 = n2*0,6;
+	}
+	public void setCalculaTrab(){
+		this.trab = trab/2;
+	}
+
 }
